@@ -85,6 +85,7 @@ lua require('go').setup()
 " Start NERDTree, unless a file or session is specified, eg. vim -S {{
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists('s:std_in') && v:this_session == '' | NERDTree | endif
+let NERDTreeShowHidden=1
 " }}
 
 
